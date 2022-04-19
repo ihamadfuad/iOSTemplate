@@ -20,6 +20,10 @@
 		855E5606280EA35B00D9D58B /* SwiftUIPro in Frameworks */ = {isa = PBXBuildFile; productRef = 855E5605280EA35B00D9D58B /* SwiftUIPro */; };
 		855E5609280EA38200D9D58B /* SwiftExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 855E5608280EA38200D9D58B /* SwiftExtensions */; };
 		855E560C280EA3A900D9D58B /* PropertyWrapperAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 855E560B280EA3A900D9D58B /* PropertyWrapperAPI */; };
+		855E561A280EA57100D9D58B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5619280EA57100D9D58B /* AppConfiguration.swift */; };
+		855E561B280EA57100D9D58B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5619280EA57100D9D58B /* AppConfiguration.swift */; };
+		855E561C280EA57100D9D58B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5619280EA57100D9D58B /* AppConfiguration.swift */; };
+		855E561D280EA57100D9D58B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5619280EA57100D9D58B /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,7 @@
 		855E55E8280EA0E900D9D58B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		855E55EC280EA0E900D9D58B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		855E55EE280EA0E900D9D58B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		855E5619280EA57100D9D58B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +108,10 @@
 		855E55C7280EA0E200D9D58B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				855E55C8280EA0E200D9D58B /* iOSTemplateApp.swift */,
-				855E55C9280EA0E200D9D58B /* ContentView.swift */,
 				855E55CA280EA0E900D9D58B /* Assets.xcassets */,
+				855E55C9280EA0E200D9D58B /* ContentView.swift */,
+				855E55C8280EA0E200D9D58B /* iOSTemplateApp.swift */,
+				855E560D280EA40B00D9D58B /* Sources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -145,6 +151,126 @@
 				855E55EE280EA0E900D9D58B /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		855E560D280EA40B00D9D58B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				855E5614280EA4B700D9D58B /* Shared */,
+				855E560F280EA41A00D9D58B /* Features */,
+				855E560E280EA41300D9D58B /* Core */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		855E560E280EA41300D9D58B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				855E5612280EA48A00D9D58B /* API */,
+				855E5610280EA45F00D9D58B /* Collections */,
+				855E5611280EA47600D9D58B /* Controllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		855E560F280EA41A00D9D58B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				855E5613280EA49600D9D58B /* Feature 1 */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		855E5610280EA45F00D9D58B /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		855E5611280EA47600D9D58B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		855E5612280EA48A00D9D58B /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		855E5613280EA49600D9D58B /* Feature 1 */ = {
+			isa = PBXGroup;
+			children = (
+				855E5616280EA4D500D9D58B /* Primary */,
+				855E5617280EA4DB00D9D58B /* Secondary */,
+				855E561F280EA6CE00D9D58B /* Tertiary */,
+			);
+			path = "Feature 1";
+			sourceTree = "<group>";
+		};
+		855E5614280EA4B700D9D58B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				855E5618280EA4F000D9D58B /* Configurations */,
+				855E5615280EA4C100D9D58B /* Extensions */,
+				855E561E280EA68600D9D58B /* Localization */,
+				855E5620280EA70F00D9D58B /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		855E5615280EA4C100D9D58B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		855E5616280EA4D500D9D58B /* Primary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Primary;
+			sourceTree = "<group>";
+		};
+		855E5617280EA4DB00D9D58B /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secondary;
+			sourceTree = "<group>";
+		};
+		855E5618280EA4F000D9D58B /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				855E5619280EA57100D9D58B /* AppConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		855E561E280EA68600D9D58B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		855E561F280EA6CE00D9D58B /* Tertiary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tertiary;
+			sourceTree = "<group>";
+		};
+		855E5620280EA70F00D9D58B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E561A280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E55F2280EA0E900D9D58B /* ContentView.swift in Sources */,
 				855E55F0280EA0E900D9D58B /* iOSTemplateApp.swift in Sources */,
 			);
@@ -324,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E561B280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E55F3280EA0E900D9D58B /* ContentView.swift in Sources */,
 				855E55F1280EA0E900D9D58B /* iOSTemplateApp.swift in Sources */,
 			);
@@ -333,6 +461,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E561C280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E55E3280EA0E900D9D58B /* Tests_iOSLaunchTests.swift in Sources */,
 				855E55E1280EA0E900D9D58B /* Tests_iOS.swift in Sources */,
 			);
@@ -342,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				855E561D280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E55EF280EA0E900D9D58B /* Tests_macOSLaunchTests.swift in Sources */,
 				855E55ED280EA0E900D9D58B /* Tests_macOS.swift in Sources */,
 			);
