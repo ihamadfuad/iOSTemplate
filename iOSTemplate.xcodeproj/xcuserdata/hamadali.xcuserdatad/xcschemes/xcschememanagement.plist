@@ -4,15 +4,58 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>iOSTemplate (iOS) Develoment.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>iOSTemplate (iOS) Staging.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>iOSTemplate (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iOSTemplate (macOS) Development.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>iOSTemplate (macOS) Staging.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>iOSTemplate (macOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>855E55CE280EA0E900D9D58B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>855E55D4280EA0E900D9D58B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>855E55DB280EA0E900D9D58B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>855E55E7280EA0E900D9D58B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

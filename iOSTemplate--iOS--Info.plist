@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Configuration</key>
+	<dict>
+		<key>API_BASE_URL</key>
+		<string>$(API_BASE_URL)</string>
+		<key>Environment</key>
+		<string>$(CONFIGURATION)</string>
+	</dict>
+</dict>
+</plist>
