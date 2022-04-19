@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6299daec1d74be12164fec090faf9ed14d0da9d6"
+      }
+    },
+    {
+      "identity" : "propertywrapperapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ihamadfuad/PropertyWrapperAPI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "2179cbeec2e01133fbfbc2103b4eb156d505acf4"
+      }
+    },
+    {
+      "identity" : "swiftextensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ihamadfuad/SwiftExtensions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "4c78a71e7f21f2c939b25de1c6755ee636a80555"
+      }
+    },
+    {
+      "identity" : "swiftuipro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ihamadfuad/SwiftUIPro.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b18473e89eaf712267311ae19ee8c9c42df01fce"
+      }
+    }
+  ],
+  "version" : 2
+}
