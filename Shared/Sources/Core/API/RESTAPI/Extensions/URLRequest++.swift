@@ -59,4 +59,40 @@ extension URLRequest {
 
         return command.joined(separator: " \\\n\t")
     }
+
+    static let ContentTypeKey = "Content-Type"
+
+    public init(url: URL,
+                method: HTTPMethod,
+                contentMimeType: ContentMimeType = .json) {
+
+        self.init(url: url)
+
+        httpMethod = method.rawValue
+        setValue(contentMimeType.rawValue, forHTTPHeaderField: URLRequest.ContentTypeKey)
+    }
+
+    public init(url: URL,
+                method: HTTPMethod,
+                contentMimeType: ContentMimeType = .json,
+                body: Data?) {
+
+        self.init(url: url)
+
+        httpMethod = method.rawValue
+        setValue(contentMimeType.rawValue, forHTTPHeaderField: URLRequest.ContentTypeKey)
+        httpBody = body
+    }
+
+    public init(url: URL,
+                method: HTTPMethod,
+                contentMimeType: ContentMimeType = .json,
+                cachePolicy: CachePolicy,
+                timeoutInterval: TimeInterval) {
+
+        self.init(url: url, cachePolicy: cachePolicy, timeoutInterval: timeoutInterval)
+
+        httpMethod = method.rawValue
+        setValue(contentMimeType.rawValue, forHTTPHeaderField: URLRequest.ContentTypeKey)
+    }
 }

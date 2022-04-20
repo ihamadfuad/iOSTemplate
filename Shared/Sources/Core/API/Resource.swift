@@ -41,39 +41,44 @@ func createAPIURL(_ collection: String = "collections", _ path: String) -> URL {
     return url
 }
 
-// Resource<E>.crud.create(name: "E", content: E()).request
-struct Resource<Content: Encodable> {
+// Resource.crud.create(name: "E", content: E())
+struct Resource<Content> where Content: Encodable {
 
-    enum crud {
+    struct crud {
 
-        case create(_ method: HTTPMethod = .post, name: String, content: Content)
-        case retrieve(_ method: HTTPMethod = .get, name: String)
-        case find(_ method: HTTPMethod = .get, name: String, id: String)
-        case update(_ method: HTTPMethod = .patch, name: String, id: String, content: Content)
-        case delete(_ method: HTTPMethod = .delete, name: String, id: String)
-
-        var request: (method: HTTPMethod, url: URL, body: Data?) {
+        static func create(_ method: HTTPMethod = .post, name: String, content: Content) -> (method: HTTPMethod, url: URL, body: Data?) {
 
             let encoder = JSONEncoder()
             encoder.dateEncodingStrategy = .formatted(.IsoDateFormatter)
+            return (method, createAPIURL(name, String()), try? encoder.encode(content))
+        }
 
-            switch self {
+        static func retrieve(_ method: HTTPMethod = .get, name: String) -> (method: HTTPMethod, url: URL, body: Data?) {
 
-            case .create(let method, let name, let content):
-                return (method, createAPIURL(name, String()), try? encoder.encode(content))
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .formatted(.IsoDateFormatter)
+            return (method, createAPIURL(name, String()), nil)
+        }
 
-            case .retrieve(let method, let name):
-                return (method, createAPIURL(name, String()), nil)
+        static func find(_ method: HTTPMethod = .get, name: String, id: String) -> (method: HTTPMethod, url: URL, body: Data?) {
 
-            case .find(let method, let name, let id):
-                return (method, createAPIURL(name, id), nil)
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .formatted(.IsoDateFormatter)
+            return (method, createAPIURL(name, id), nil)
+        }
 
-            case .update(let method, let name, let id, let content):
-                return (method, createAPIURL(name, id), try? encoder.encode(content))
+        static func update(_ method: HTTPMethod = .patch, name: String, id: String, content: Content) -> (method: HTTPMethod, url: URL, body: Data?) {
 
-            case .delete(let method, let name, let id):
-                return (method, createAPIURL(name, id), nil)
-            }
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .formatted(.IsoDateFormatter)
+            return (method, createAPIURL(name, id), try? encoder.encode(content))
+        }
+
+        static func delete(_ method: HTTPMethod = .delete, name: String, id: String) -> (method: HTTPMethod, url: URL, body: Data?) {
+
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .formatted(.IsoDateFormatter)
+            return (method, createAPIURL(name, id), nil)
         }
     }
 }

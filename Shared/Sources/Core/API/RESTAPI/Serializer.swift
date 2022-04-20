@@ -20,10 +20,42 @@
 // Email: ihamadfouad@icloud.com
 //
 // Created At: 19/04/2022
-// Last modified: 19/04/2022
+// Last modified: 20/04/2022
 //
 // ºººº----------------------------------------------------------------------ºººº \\
 
 import Foundation
 
-public typealias Params = [String: CustomStringConvertible]
+actor Serializer {
+
+    private let decoder: JSONDecoder
+    private let encoder: JSONEncoder
+
+    init(decoder: JSONDecoder?, encoder: JSONEncoder?) {
+
+        if let decoder = decoder {
+            self.decoder = decoder
+        } else {
+            self.decoder = JSONDecoder()
+            self.decoder.dateDecodingStrategy = .iso8601
+        }
+        if let encoder = encoder {
+            self.encoder = encoder
+        } else {
+            self.encoder = JSONEncoder()
+            self.encoder.dateEncodingStrategy = .iso8601
+        }
+    }
+
+    func decode<T: Decodable>(_ data: Data) async throws -> T {
+
+        decoder.dateDecodingStrategy = .formatted(.IsoDateFormatter)
+        return try decoder.decode(T.self, from: data)
+    }
+
+    func encode<T: Encodable>(_ entity: T) async throws -> Data {
+
+        decoder.dateDecodingStrategy = .formatted(.IsoDateFormatter)
+        return try encoder.encode(entity)
+    }
+}
