@@ -72,6 +72,14 @@
 		855E5675280ED2B900D9D58B /* URLSessionProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5673280ED2B900D9D58B /* URLSessionProxyDelegate.swift */; };
 		855E5676280ED2B900D9D58B /* URLSessionProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5673280ED2B900D9D58B /* URLSessionProxyDelegate.swift */; };
 		855E5677280ED2B900D9D58B /* URLSessionProxyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5673280ED2B900D9D58B /* URLSessionProxyDelegate.swift */; };
+		855E5679280FE53D00D9D58B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5678280FE53D00D9D58B /* Resource.swift */; };
+		855E567A280FE53D00D9D58B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5678280FE53D00D9D58B /* Resource.swift */; };
+		855E567B280FE53D00D9D58B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5678280FE53D00D9D58B /* Resource.swift */; };
+		855E567C280FE53D00D9D58B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E5678280FE53D00D9D58B /* Resource.swift */; };
+		855E567E280FF23700D9D58B /* DateFormatter++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E567D280FF23700D9D58B /* DateFormatter++.swift */; };
+		855E567F280FF23700D9D58B /* DateFormatter++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E567D280FF23700D9D58B /* DateFormatter++.swift */; };
+		855E5680280FF23700D9D58B /* DateFormatter++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E567D280FF23700D9D58B /* DateFormatter++.swift */; };
+		855E5681280FF23700D9D58B /* DateFormatter++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855E567D280FF23700D9D58B /* DateFormatter++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +130,8 @@
 		855E5669280ED23E00D9D58B /* AnyEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEncodable.swift; sourceTree = "<group>"; };
 		855E566E280ED27C00D9D58B /* OperationQueue++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue++.swift"; sourceTree = "<group>"; };
 		855E5673280ED2B900D9D58B /* URLSessionProxyDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProxyDelegate.swift; sourceTree = "<group>"; };
+		855E5678280FE53D00D9D58B /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		855E567D280FF23700D9D58B /* DateFormatter++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				855E5640280EB9BA00D9D58B /* RESTRequest */,
+				855E5678280FE53D00D9D58B /* Resource.swift */,
+				855E567D280FF23700D9D58B /* DateFormatter++.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -543,6 +555,8 @@
 				855E5665280ED21700D9D58B /* Serializer.swift in Sources */,
 				855E561A280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E566F280ED27C00D9D58B /* OperationQueue++.swift in Sources */,
+				855E5679280FE53D00D9D58B /* Resource.swift in Sources */,
+				855E567E280FF23700D9D58B /* DateFormatter++.swift in Sources */,
 				855E564C280EBC4200D9D58B /* Params.swift in Sources */,
 				855E5642280EB9D400D9D58B /* URLRequest++.swift in Sources */,
 				855E5647280EBA6A00D9D58B /* HTTPMethod.swift in Sources */,
@@ -565,6 +579,8 @@
 				855E5666280ED21700D9D58B /* Serializer.swift in Sources */,
 				855E561B280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E5670280ED27C00D9D58B /* OperationQueue++.swift in Sources */,
+				855E567A280FE53D00D9D58B /* Resource.swift in Sources */,
+				855E567F280FF23700D9D58B /* DateFormatter++.swift in Sources */,
 				855E564D280EBC4200D9D58B /* Params.swift in Sources */,
 				855E5643280EB9D400D9D58B /* URLRequest++.swift in Sources */,
 				855E5648280EBA6A00D9D58B /* HTTPMethod.swift in Sources */,
@@ -587,6 +603,8 @@
 				855E5667280ED21700D9D58B /* Serializer.swift in Sources */,
 				855E561C280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E5671280ED27C00D9D58B /* OperationQueue++.swift in Sources */,
+				855E567B280FE53D00D9D58B /* Resource.swift in Sources */,
+				855E5680280FF23700D9D58B /* DateFormatter++.swift in Sources */,
 				855E564E280EBC4200D9D58B /* Params.swift in Sources */,
 				855E5644280EB9D400D9D58B /* URLRequest++.swift in Sources */,
 				855E5649280EBA6A00D9D58B /* HTTPMethod.swift in Sources */,
@@ -609,6 +627,8 @@
 				855E5668280ED21700D9D58B /* Serializer.swift in Sources */,
 				855E561D280EA57100D9D58B /* AppConfiguration.swift in Sources */,
 				855E5672280ED27C00D9D58B /* OperationQueue++.swift in Sources */,
+				855E567C280FE53D00D9D58B /* Resource.swift in Sources */,
+				855E5681280FF23700D9D58B /* DateFormatter++.swift in Sources */,
 				855E564F280EBC4200D9D58B /* Params.swift in Sources */,
 				855E5645280EB9D400D9D58B /* URLRequest++.swift in Sources */,
 				855E564A280EBA6A00D9D58B /* HTTPMethod.swift in Sources */,
